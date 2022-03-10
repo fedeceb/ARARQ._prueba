@@ -1,0 +1,386 @@
+ /*  IMPORTS  */
+
+ @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@300;500;700&display=swap");
+ 
+
+/*  VARIABLES */
+
+:root {
+    --principal: #1C1C1C;;
+    --secondary: #fff;
+    --font-primary: "Inter", sans-serif;
+    --font-secondary: "Bowly One SC", cursive;
+}
+
+
+ /* NORMALIZE */
+
+ *,
+ * ::after,
+ * ::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+
+ /*  GLOBALS  */
+
+ html {
+     font-size: 62.5%;
+     font-family: var(--font-primary);
+     color: var(--principal);
+ }
+
+body {
+    display: grid;
+    background-color: var(--secondary);
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.studio {
+    display: grid;
+    background-color: var(--secondary);
+    grid-template-rows: auto 1fr auto ;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+    display: inline-block;
+}
+
+.btn-vermas {
+    background-color: var(--principal);
+    border: 2px;
+    width: 100px;
+    height: 40px;
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+}
+
+
+
+/*  HELPERS */
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+ /*  HEADER   y NAVBAR  */
+
+ header {
+     background-color: var(--principal);
+     height: 100px;
+ }
+
+ header .navbar {
+     min-height: 12vh;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ header .navbar .navbarBrand {
+     flex-basis: 30%;
+     font-size: 3.5em;
+     display: flex;
+     align-items: center;
+     text-decoration: none;
+ }
+
+
+ .menu {
+     flex-basis: 40%;
+     justify-content: space-between;
+ }*
+
+ .menu .menu__item {
+    border: 2px solid;
+    transition: all .3s ease-in-out;
+    
+ }
+
+ .menu .menu__item:hover {
+     border-color: aliceblue;
+ }
+
+ .menu .menu__item .menu__link {
+     font-size: 1.6em;
+     padding: 2rem ;
+     position: relative;
+     text-decoration: none;
+ }
+
+
+ /*  MAIN  SECTION  */
+
+ main section {
+     padding: 0 2em;
+ }
+
+
+.p-index {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.centrado-img {
+    width: 1000px;
+}
+
+
+/*  FOOTER  - global -  */
+
+footer {
+    background-color: var(--principal);
+    color: var(--secondary);
+    height: 200px;
+    font-size: 1.5em;
+}
+
+.divPadre__footer {
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+.logo__socials {
+    font-size: 2em;
+}
+
+.footer__logo {
+    font-size: 2em;
+    margin-top: 25px;
+}
+
+.footer__socials {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    margin-left: 5%;
+}
+
+.footer__socials--list {
+    padding: 1rem;
+}
+
+.footer__list {
+   margin-top: 20px;
+}
+
+.footer__list h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.footer__logo {
+    font-size: 2em;
+    position: relative;
+}
+
+.footer_socials--list {
+    display: inline-block;
+    position: absolute;
+    flex-direction: row;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer__list--item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 500px;    
+}
+
+.divDerechos {
+    display: flex;
+    justify-content: center;
+}
+
+
+--------------------------------------------------
+
+
+/*   MAIN SECTION  -  PAG. ESTUDIO  */
+
+
+.section-estudio {
+    display: flex;
+    flex-direction: row;
+}
+
+.h1-estudio {
+    display: flex;
+    margin-left: 5%;
+}
+
+.divPicture__estudio {
+    display: flex;
+    width: 500px;
+    margin-top: 60px;
+    flex-basis: 60%;  
+}
+
+.artEstudio {
+    display: flex;
+    padding-left: 50%;
+    font-size: 1.5em;
+    margin-top: -360px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+
+ /* -----------------------------------------*/
+
+
+
+/*   MEDIA QUERIES   */
+
+@media screen and (max-width: 768px) {
+
+/*  index  */
+
+.container {
+    max-width: 768px;
+    }
+
+    header {
+        height: 150px;
+        width: 100%;
+    }
+   
+    header .navbar {
+        /*min-height: 12vh;*/
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+   
+    header .navbar .navbarBrand {
+        justify-content: center;
+        font-size: 3.5em;
+        display: flex;
+        text-decoration: none;
+  
+    }
+
+    body {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-width: 100vh;
+    }
+
+    .centrado-img {
+        max-width: 768px;
+    }
+
+    .p-index {
+        font-size: 1.5em;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        height: 200px;
+        font-size: 1.5em;
+        min-height: 100vh;
+    }
+
+    .divPadre__footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__list--item {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left: auto;
+    }
+
+    .footer__socials {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8em;
+        margin-right: 5%;
+    }
+
+    .footer__logo {
+        display: flex;
+        font-size: 2em;
+        justify-content: center;
+    }
+
+
+    /* estudio */
+
+    .studio {
+        display: grid;
+        grid-template-rows: auto 1fr auto ;
+        min-height: 100vh;
+    }
+
+    .divPicture__estudio {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        width: 735px;
+    }
+
+    .divEstudio__p{
+        display: flex;
+
+    }
+
+    .artEstudio {
+        display: flex;
+        justify-content: center;
+        padding-left: 0%;
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+}
+  
+  
+  
+  
+  
+  
+
+
+
+
