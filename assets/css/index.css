@@ -240,31 +240,76 @@ footer {
 }
 
 .h1-estudio {
-    display: flex;
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
     margin-left: 5%;
+    font-weight: 900 !important;
 }
 
-.divPicture__estudio {
-    display: flex;
-    width: 500px;
-    margin-top: 60px;
-    flex-basis: 60%;  
+.img-estudio {
+    padding: 30px;
+    width: 100%;
+    margin-top: 15%;
+    justify-content: center;
 }
 
-.artEstudio {
-    display: flex;
-    padding-left: 50%;
-    font-size: 1.5em;
-    margin-top: -360px;
-    margin-bottom: 20px;
+.p-estudio {
+    padding: 30px;
+    font-size: 1.6em;
     text-align: justify;
 }
 
+/*.artEstudio {
+    display: flex;
+    padding-left: 50%;
+    
+    margin-top: -360px;
+    margin-bottom: 20px;
+    
+}*/
 
 
  /* -----------------------------------------*/
 
+/*  PAG CONTACTOS  */
 
+.h1-contactos {
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+    font-weight: 900 !important;
+}
+
+.article-contacto {
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+.p-contact {
+    font-size: 1.6em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.input-size {
+    font-size: 1.2em;
+}
+
+.input-contactos {
+    font-size: 1.2em !important;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.mapa {
+    margin-top: 5%;
+    margin-left: 25px;
+    margin-bottom: 5%;
+}
+
+/*-------------------------------------------*/
 
 /*   MEDIA QUERIES   */
 
@@ -347,33 +392,9 @@ footer {
 
     /* estudio */
 
-    .studio {
-        display: grid;
-        grid-template-rows: auto 1fr auto ;
-        min-height: 100vh;
-    }
-
-    .divPicture__estudio {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        width: 735px;
-    }
-
-    .divEstudio__p{
-        display: flex;
-
-    }
-
-    .artEstudio {
-        display: flex;
-        justify-content: center;
-        padding-left: 0%;
-        font-size: 1.5em;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        text-align: justify;
-    }
+   .img-estudio {
+       margin-top: 0%;
+   }
 }
 
 
@@ -455,4 +476,43 @@ button {
     padding-left: var(--bs-gutter-x,.75rem);
     margin-right: auto;
     margin-left: auto;
+}
+
+
+/*---------------------------*/
+
+/* PAG. SERVICIOS */
+
+.tarjeta-servicios {
+    padding-top: 30px;
+    padding-left: 100px !important;
+    padding-bottom: 30px;
+}
+
+.h1-servicios {
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+    font-weight: 900 !important;
+}
+
+/* -bootstrap- */
+
+.card {
+    width: 40rem !important;
+}
+
+.card-title {
+    font-size: 1.6em !important;
+    color: var(--principal) !important;
+}
+
+.card-text {
+    font-size: 1.2em !important;
+    color: var(--principal) !important;
+}
+
+.list-group-item {
+    font-size: 1.2em;
 }
