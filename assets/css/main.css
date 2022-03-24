@@ -1,0 +1,169 @@
+/*  VARIABLES  */
+/*  VARIABLES */
+/*  GLOBALES  */
+/*  IMPORTS  */
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@300;500;700&display=swap");
+/* NORMALIZE */
+*,
+* ::after,
+* ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*  GLOBALS  */
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  color: #1C1C1C; }
+
+body {
+  display: grid;
+  background-color: #fff;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; }
+
+.studio {
+  display: grid;
+  background-color: #fff;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #fff !important;
+  display: inline-block; }
+
+.btn-vermas {
+  background-color: #1C1C1C;
+  border: 2px;
+  width: 100px;
+  height: 40px;
+  font-size: 1.4em;
+  margin-top: 5px;
+  margin-bottom: 20px; }
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: 5%; }
+
+/*  PARTIALS  */
+/*  HEADER   y NAVBAR  */
+header {
+  background-color: #1C1C1C;
+  height: 100px; }
+  header .navbar {
+    min-height: 12vh;
+    justify-content: space-between;
+    align-items: center; }
+  header .navbarBrand {
+    flex-basis: 30%;
+    font-size: 3.5em;
+    display: flex;
+    align-items: center;
+    text-decoration: none; }
+  header .menu {
+    flex-basis: 40%;
+    justify-content: space-between; }
+    header .menu__item {
+      border: 2px solid;
+      transition: all .3s ease-in-out; }
+      header .menu__item:hover {
+        border-color: aliceblue; }
+    header .menu .menu__link {
+      font-size: 1.6em;
+      padding: 2rem;
+      position: relative;
+      text-decoration: none; }
+
+/*  HELPERS */
+.flex-row {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+/*  FOOTER  - global -  */
+footer {
+  background-color: #1C1C1C;
+  color: #fff;
+  height: none;
+  font-size: 1.5em; }
+  footer .divPadre__footer {
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between; }
+    footer .divPadre__footer .logo__socials {
+      font-size: 2em; }
+    footer .divPadre__footer .footer__logo {
+      font-size: 2em;
+      margin-top: 25px;
+      position: relative; }
+    footer .divPadre__footer .footer__socials {
+      display: flex;
+      flex-direction: row;
+      font-size: 0.8em;
+      margin-left: 5%; }
+    footer .divPadre__footer .footer_socials--list {
+      display: inline-block;
+      position: absolute;
+      flex-direction: row;
+      padding: 1rem; }
+    footer .divPadre__footer .footer__list {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row-reverse; }
+      footer .divPadre__footer .footer__list .footer__list h3 {
+        font-size: 1.6em;
+        margin-bottom: 10px; }
+      footer .divPadre__footer .footer__list .footer__list--item {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left: 500px; }
+  footer .divDerechos {
+    display: flex;
+    justify-content: center; }
+
+/*  VIEWS  */
+/*  PAG CONTACTOS  */
+.h1-contactos {
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: 5%;
+  font-weight: 900 !important; }
+
+.article-contacto {
+  margin-top: 5%;
+  margin-left: 25%; }
+
+.p-contact {
+  font-size: 1.6em;
+  margin-top: 15px;
+  margin-bottom: 10px; }
+
+.input-size {
+  font-size: 1.2em; }
+
+.input-contactos {
+  font-size: 1.2em !important;
+  margin-top: 10px;
+  margin-left: 35px; }
+
+.mapa {
+  margin-top: 5%;
+  margin-left: 25px;
+  margin-bottom: 5%; }
+
+body {
+  /*editar body para normalizar pag c/ bootstrap*/
+  margin: 0;
+  font-family: "Inter", sans-serif !important;
+  color: #1C1C1C !important; }

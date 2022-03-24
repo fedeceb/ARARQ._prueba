@@ -1,0 +1,51 @@
+/*  HEADER   y NAVBAR  */
+
+header {
+    background-color: $principal;
+    height: 100px;
+
+    .navbar {
+        min-height: 12vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbarBrand {
+        flex-basis: 30%;
+        font-size: 3.5em;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .menu {
+        flex-basis: 40%;
+        justify-content: space-between;
+
+        &__item {
+            border: 2px solid;
+            transition: all .3s ease-in-out;
+            &:hover {
+                border-color: aliceblue;
+            }
+         }
+
+        .menu__link {
+            font-size: 1.6em;
+            padding: 2rem ;
+            position: relative;
+            text-decoration: none;
+        }
+    }
+}
+
+/*  HELPERS */
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,62 @@
+/*  IMPORTS  */
+
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@300;500;700&display=swap");
+
+ /* NORMALIZE */
+
+ *,
+ * ::after,
+ * ::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /*  GLOBALS  */
+
+ html {
+    font-size: 62.5%;
+    font-family: $font-primary;
+    color: $principal;
+}
+
+body {
+   display: grid;
+   background-color: $secondary;
+   grid-template-rows: auto 1fr auto;
+   min-height: 100vh;
+}
+
+.studio {
+   display: grid;
+   background-color: $secondary;
+   grid-template-rows: auto 1fr auto ;
+   min-height: 100vh;
+}
+
+ul {
+   list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+   color: $secondary !important;
+   display: inline-block;
+}
+
+.btn-vermas {
+   background-color: $principal;
+   border: 2px;
+   width: 100px;
+   height: 40px;
+   font-size: 1.4em;
+   margin-top: 5px;
+   margin-bottom: 20px;
+}
+
+h1 {
+   font-size: 2.5em;
+   margin-top: 30px;
+   margin-bottom: 15px;
+   margin-left: 5%;
+}

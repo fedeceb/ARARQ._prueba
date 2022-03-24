@@ -1,0 +1,60 @@
+/*  FOOTER  - global -  */
+
+footer {
+    background-color: $principal;
+    color: $secondary;
+    height: none;
+    font-size: 1.5em;
+
+    .divPadre__footer {
+        display: flex;
+        padding: 0 2rem;
+        justify-content: space-between;
+
+        .logo__socials {
+            font-size: 2em;
+        }
+
+        .footer__logo {
+            font-size: 2em;
+            margin-top: 25px;
+            position: relative;
+        }
+
+        .footer__socials {
+            display: flex;
+            flex-direction: row;
+            font-size: 0.8em;
+            margin-left: 5%;
+        }
+
+        .footer_socials--list {
+            display: inline-block;
+            position: absolute;
+            flex-direction: row;
+            padding: 1rem;
+        }
+          
+        .footer__list {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row-reverse;
+
+            .footer__list h3 {
+                font-size: 1.6em;
+                margin-bottom: 10px;
+            }
+
+            .footer__list--item {
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+                margin-left: 500px;    
+            }
+        }    
+    }
+    .divDerechos {
+        display: flex;
+        justify-content: center;
+    }
+}
