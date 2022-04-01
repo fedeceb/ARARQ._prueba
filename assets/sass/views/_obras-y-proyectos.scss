@@ -1,0 +1,64 @@
+/*  PAG - PROYECTOS  */
+
+/*.h1-proyectos {
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+    font-weight: 900 !important;
+}*/
+
+
+/*   - BOOTSTRAP -   (proyectos)   */
+
+
+body {    /*editar body para normalizar pag c/ bootstrap*/
+margin: 0;
+font-family: var(--font-primary) !important;
+font-size: var(--bs-body-font-size);
+font-weight: var(--bs-body-font-weight);
+line-height: var(--bs-body-line-height);
+color: var(--principal) !important;
+text-align: var(--bs-body-text-align);
+background-color: var(--bs-body-bg);
+-webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: transparent;
+}
+
+#galeria-obras {
+margin-bottom: 50px;
+}
+
+#galeria-obras img {
+width: 100%;
+height: 300px;
+border-radius: 5px;
+}
+
+#galeria-obras .col-lg-4 {
+padding: 30px;
+}
+
+/* MAIN -proyectos- */
+
+.img-galeria{
+transition: .3s ease-in-out;
+opacity: 0.5;
+}
+
+.img-galeria:hover {
+-webkit-transform-: scale(1.1);
+transform: scale(1.1);
+opacity: 1;
+}
+
+.container__text--div {
+text-align: center;
+font-size: 1.6em;
+margin-top: 15px;
+color: var(--principal) !important;
+}
+
+button {
+border: none;
+}
