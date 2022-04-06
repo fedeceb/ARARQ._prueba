@@ -1,16 +1,93 @@
 /*  PÁG HOME  */
 
+main {
+
+    background-color: $principal;
+}
+
 main section {
     padding: 0 2em;
 }
 
 
 .p-index {
-   font-size: 1.6em !important;
-   margin-top: 20px;
-   margin-bottom: 20px;
+   
+    @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px);
+    color: $third
 }
 
 .centrado-img {
    width: 1000px;
 }
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px){
+
+   .container {
+      max-width: 992px;
+   }
+  
+   body {
+       display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-width: 100vh;
+   }
+  
+   .centrado-img {
+       max-width: 992px;
+   }
+  
+   .p-index {
+
+        @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px)
+   }
+}
+
+
+@media screen and (max-width: 768px) {
+   
+   .container {
+       max-width: 768px;
+      }
+   
+   body {
+       display: grid;
+       grid-template-rows: auto 1fr auto;
+       min-width: 100vh;
+   }
+   
+   .centrado-img {
+       max-width: 768px;
+   }
+   
+   .p-index {
+       
+        @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px)
+   }
+}
+
+
+@media screen and (max-width: 576px) {
+
+   .container {
+      max-width: 576px;
+   }
+  
+   body {
+       display: grid;
+       grid-template-rows: auto 1fr auto;
+       min-width: 100vh;
+   }
+  
+   .centrado-img {
+       max-width: 576px;
+   }
+  
+   .p-index {
+       
+        @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px)
+   }
+}  

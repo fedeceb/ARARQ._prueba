@@ -1,13 +1,22 @@
 /*  PAG - PROYECTOS  */
 
-/*.h1-proyectos {
-    font-size: 2.5em;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    margin-left: 5%;
-    font-weight: 900 !important;
-}*/
+.img-galeria {
+    transition: .3s ease-in-out;
+    opacity: 0.5;
 
+    &:hover {
+        -webkit-transform-: scale(1.1);
+        transform: scale(1.1);
+        opacity: 1;
+        }
+}
+    
+.container__text--div {
+
+    @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px);
+    color: var(--principal) !important;
+}
+    
 
 /*   - BOOTSTRAP -   (proyectos)   */
 
@@ -39,26 +48,12 @@ border-radius: 5px;
 padding: 30px;
 }
 
-/* MAIN -proyectos- */
+/*  MEDIA QUERIES  */
 
-.img-galeria{
-transition: .3s ease-in-out;
-opacity: 0.5;
-}
-
-.img-galeria:hover {
--webkit-transform-: scale(1.1);
-transform: scale(1.1);
-opacity: 1;
-}
-
-.container__text--div {
-text-align: center;
-font-size: 1.6em;
-margin-top: 15px;
-color: var(--principal) !important;
-}
-
-button {
-border: none;
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%; 
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
 }

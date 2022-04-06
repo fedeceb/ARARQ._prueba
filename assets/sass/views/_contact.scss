@@ -6,6 +6,7 @@
 }
 
 .p-contact {
+    color: $third;
     font-size: 1.6em;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -31,4 +32,45 @@ body {    /*editar body para normalizar pag c/ bootstrap*/
     margin: 0;
     font-family: $font-primary !important;
     color: $principal !important;
+}
+
+/*  MEDIA QUERIES  */
+
+@media screen and (max-width: 992px) {
+
+    .input-contactos {
+        margin-bottom: 30px;
+    }
+
+    .mapa {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .row>* {
+        margin-left: 50px;
+        padding-right: calc(var(--bs-gutter-x) * 5) !important;
+        padding-left: calc(var(--bs-gutter-x) * 5) !important;
+    }
+
+    .mapa {
+        width: 760px;
+        height: 500px;
+        margin-left: -95px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .row>* {
+        margin-left: 50px;
+        padding-left: calc(var(--bs-gutter-x) * .0) !important;
+    }   
+
+    .mapa {
+        margin-left: -105px;
+    }
 }

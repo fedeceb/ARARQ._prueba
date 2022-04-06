@@ -1,0 +1,38 @@
+/* mixins */
+
+
+/*header*/
+
+@mixin navlogo ($justify : center, $font : 3.5em, $t-decoration : none) {
+
+    display: flex;
+    justify-content: $justify;
+    font-size: $font;
+    text-decoration: $t-decoration;
+};
+
+@mixin pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px) {
+
+    font-size: $font;
+    text-align: $txtalign;
+    margin-top: $margint;
+    margin-bottom: $marginb;
+}
+
+/*footer*/
+
+@mixin listitem ($direction : column, $margint : 10px, $marginl : auto) {
+
+    display: flex;
+    flex-direction: $direction;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+@mixin fsocials ($justify : center, $font : 0.8em , $marginl : 0) {
+
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    margin-left: 0px !important;
+}

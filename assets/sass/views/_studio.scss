@@ -1,4 +1,4 @@
-/*   MAIN SECTION  -  PAG. ESTUDIO  */
+/*  PAG. ESTUDIO  */
 
 
 .section-estudio {
@@ -14,7 +14,44 @@
 }
 
 .p-estudio {
+    color: $third;
     padding: 30px;
     font-size: 1.6em;
     text-align: justify;
+}
+
+
+/*  MEDIA QUERIES  */
+
+@media screen and (max-width: 992px) {
+
+    .container {
+        max-width: 992px;
+    }
+
+    .img-estudio {
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+    .img-estudio {
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .container {
+        max-width: 576px;
+    }
+
+    .img-estudio {
+        margin-top: 0%;
+    }
 }

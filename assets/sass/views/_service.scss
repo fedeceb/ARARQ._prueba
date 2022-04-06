@@ -25,3 +25,26 @@
 .list-group-item {
     font-size: 1.2em;
 }
+
+/*  MEDIA QUERIES  */
+
+@media screen and (max-width: 992px) {
+
+    .tarjeta-servicios{
+        padding-left: 50px !important;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+
+    .tarjeta-servicios {
+        padding-left: 160px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .tarjeta-servicios {
+        padding-left: 90px !important;
+    }
+}
