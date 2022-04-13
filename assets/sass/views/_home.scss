@@ -12,7 +12,7 @@ main section {
 
 .p-index {
    
-    @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px);
+    @include pindex ($font : 1.6em, $txtalign : justify, $margint : 40px, $marginb : 20px);
     color: $third
 }
 
@@ -20,7 +20,47 @@ main section {
    width: 1000px;
 }
 
+.card {
+    background-color: $third !important;
+    border: none !important;
+}
 
+.tarjetas {
+    margin-top: 50px !important;
+    /*padding: 0 50px 30px 30px;*/
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+h5 {
+    font-size: 1.6em !important;
+}
+
+.btn-servicios {
+    background-color: $principal;
+    color: $third;
+    border: 2px;
+    width: 50%;
+    height: 40px;
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-bottom: 15px;
+}
+
+.a-servicios {
+    color: $third !important;
+}
+
+/*.row {
+    margin-top: 50px !important;
+}*/
+
+.img-indxstudio {
+    height: 70%;
+    margin-left: 10%;
+}
 
 /* MEDIA QUERIES */
 

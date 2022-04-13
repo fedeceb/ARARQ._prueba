@@ -13,8 +13,8 @@
     
 .container__text--div {
 
-    @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px);
-    color: var(--principal) !important;
+    @include pindex ($font : 1.6em, $txtalign : center, $margint : 15px, $marginb : 20px);
+    color: $third !important;
 }
     
 

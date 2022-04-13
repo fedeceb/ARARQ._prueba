@@ -323,12 +323,47 @@ main section {
 .p-index {
   font-size: 1.6em;
   text-align: justify;
-  margin-top: 15px;
+  margin-top: 40px;
   margin-bottom: 20px;
   color: #f8f9fa; }
 
 .centrado-img {
   width: 1000px; }
+
+.card {
+  background-color: #f8f9fa !important;
+  border: none !important; }
+
+.tarjetas {
+  margin-top: 50px !important;
+  /*padding: 0 50px 30px 30px;*/
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-bottom: 30px; }
+
+h5 {
+  font-size: 1.6em !important; }
+
+.btn-servicios {
+  background-color: #212529;
+  color: #f8f9fa;
+  border: 2px;
+  width: 50%;
+  height: 40px;
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-bottom: 15px; }
+
+.a-servicios {
+  color: #f8f9fa !important; }
+
+/*.row {
+    margin-top: 50px !important;
+}*/
+.img-indxstudio {
+  height: 70%;
+  margin-left: 10%; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 992px) {
@@ -457,10 +492,10 @@ main section {
 
 .container__text--div {
   font-size: 1.6em;
-  text-align: justify;
+  text-align: center;
   margin-top: 15px;
   margin-bottom: 20px;
-  color: var(--principal) !important; }
+  color: #f8f9fa !important; }
 
 /*   - BOOTSTRAP -   (proyectos)   */
 body {
