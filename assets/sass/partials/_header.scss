@@ -1,8 +1,22 @@
 /*  HEADER   y NAVBAR  */
 
-header {
+.header-color {
     background-color: $principal;
     height: 100px;
+}
+
+header {
+    /*background-color: $principal;
+    height: 100px;*/
+
+    .position-abs {
+        /*position: none !important;*/
+        position: absolute;
+        z-index: 1;
+        border-bottom: 1px solid $third;
+        /*justify-content: center !important;*/
+        margin-left: 290px;
+    }
 
     .navbar {
         min-height: 12vh;
@@ -23,13 +37,13 @@ header {
         flex-basis: 40%;
         justify-content: space-between;
 
-        &__item {
+        /*&__item {
             border: 2px solid;
             transition: all .3s ease-in-out;
             &:hover {
                 border-color: aliceblue;
             }
-         }
+         }*/
 
         .menu__link {
             color: $third !important;
