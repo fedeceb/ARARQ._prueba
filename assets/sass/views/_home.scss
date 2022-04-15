@@ -18,9 +18,16 @@ main section {
     height: 941px;
 }
 
+.row-index {
+    display: flex;
+    column-gap: 15px;
+
+}
+
 .p-index {
    
     @include pindex ($font : 1.6em, $txtalign : justify, $margint : 40px, $marginb : 20px);
+    padding: 50px 25px 10px 10px;
     color: $third
 }
 
@@ -66,8 +73,7 @@ h5 {
 }*/
 
 .img-indxstudio {
-    height: 70%;
-    margin-left: 10%;
+    width: 100%;
 }
 
 /* MEDIA QUERIES */

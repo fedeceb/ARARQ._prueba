@@ -207,9 +207,11 @@ header {
     flex-basis: 40%;
     justify-content: space-between;
     /*&__item {
-            border: 2px solid;
-            transition: all .3s ease-in-out;
+            border-color: transparent;
+            /*border: 2px solid;*/
+    /*  transition: all .3s ease-in-out;
             &:hover {
+                border: 2px solid;
                 border-color: aliceblue;
             }
          }*/ }
@@ -339,11 +341,16 @@ main section {
 .w-100 {
   height: 941px; }
 
+.row-index {
+  display: flex;
+  column-gap: 15px; }
+
 .p-index {
   font-size: 1.6em;
   text-align: justify;
   margin-top: 40px;
   margin-bottom: 20px;
+  padding: 50px 25px 10px 10px;
   color: #f8f9fa; }
 
 .centrado-img {
@@ -381,8 +388,7 @@ h5 {
     margin-top: 50px !important;
 }*/
 .img-indxstudio {
-  height: 70%;
-  margin-left: 10%; }
+  width: 100%; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 992px) {
@@ -431,10 +437,36 @@ h5 {
     margin-bottom: 20px; } }
 
 /* PAG. SERVICIOS */
+.img-servicios {
+  width: 100%;
+  border-radius: 5px; }
+
 .tarjeta-servicios {
   padding-top: 30px;
   padding-left: 100px !important;
   padding-bottom: 30px; }
+
+h2 {
+  font-size: 30px !important; }
+
+.accordion-button {
+  font-size: 16px !important; }
+
+.accordion-body {
+  font-size: 12px !important; }
+
+.row {
+  align-items: center;
+  margin-top: 50px !important;
+  margin-bottom: 100px; }
+
+.p-carousel {
+  font-size: 14px; }
+
+.p-int {
+  color: #f8f9fa !important;
+  font-size: 16px;
+  text-align: justify; }
 
 /* -bootstrap- */
 .card {
@@ -472,7 +504,6 @@ h5 {
 .img-estudio {
   padding: 30px;
   width: 100%;
-  margin-top: 15%;
   justify-content: center; }
 
 .p-estudio {
