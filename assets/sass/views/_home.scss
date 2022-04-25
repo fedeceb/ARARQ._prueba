@@ -35,6 +35,7 @@ main section {
     width: 100px;
     height: 40px;
     font-size: 1.4em;
+    margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 20px;
  }
@@ -92,6 +93,11 @@ h5 {
 
 @media screen and (max-width: 992px){
 
+    .row-cols-md-4>* {
+        flex: 0 0 auto;
+        width: 47% !important;
+    }
+
     .w-100 {
         width: 100%;
         height: 100%;
@@ -111,10 +117,10 @@ h5 {
 
     .row-card {
         display: flex;
-        flex-direction: column !important;
+        flex-direction: row !important;
         flex-wrap: wrap;
         row-gap: 30px;
-        column-gap: 30px;
+        column-gap: 50px;
     }
 
     .col {
@@ -122,13 +128,22 @@ h5 {
     }
 
     .tarjetas {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .btn-servicios {
+        font-size: 1.2em;
     }
 }
 
 
 @media screen and (max-width: 768px) {
+
+    .row-cols-md-4>* {
+        flex: 0 0 auto;
+        width: 45% !important;
+    }
    
     .w-100 {
         width: 100%;
@@ -148,10 +163,10 @@ h5 {
 
     .row-card {
         display: flex;
-        flex-direction: column !important;
+        flex-direction: row !important;
         flex-wrap: wrap;
         row-gap: 30px;
-        column-gap: 30px;
+        column-gap: 50px;
     }
 
     .col {
@@ -159,13 +174,22 @@ h5 {
     }
 
     .tarjetas {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .btn-servicios {
+        font-size: 1.2em;
     }
 }
 
 
 @media screen and (max-width: 576px) {
+
+    .row-cols-md-4>* {
+        flex: 0 0 auto;
+        width: 46% !important;
+    }
 
     .w-100 {
         width: 100%;
@@ -189,10 +213,11 @@ h5 {
 
     .row-card {
         display: flex;
-        flex-direction: column !important;
+        flex-direction: column;
         flex-wrap: wrap;
         row-gap: 30px;
         column-gap: 30px;
+        justify-content: center;
     }
 
     .col {
@@ -200,12 +225,17 @@ h5 {
     }
 
     .tarjetas {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
+
+    .row-cols-md-4>* {
+        flex: 0 0 auto;
+        width: 100% !important;
+    }
 
     .w-100 {
         width: 100%;
@@ -240,8 +270,8 @@ h5 {
     }
 
     .tarjetas {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .card-img-top {
