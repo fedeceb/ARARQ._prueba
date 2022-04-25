@@ -23,10 +23,17 @@ h2 {
     font-size: 12px !important;
 }
 
-.row {
+.row-service {
+    display: flex;
+    column-gap: 30px;
     align-items: center;
     margin-top: 50px !important;
     margin-bottom: 100px;
+}
+
+.animate__animated {
+    -webkit-animation-duration: 5s !important;
+    animation-duration: 5s !important;
 }
 
 .p-carousel {
@@ -37,47 +44,47 @@ h2 {
     color: $third !important;
     font-size: 16px;
     text-align: justify;
-}
-
-/* -bootstrap- */
-
-.card {
-    width: 40rem !important;
-}
-
-.card-title {
-    font-size: 1.6em !important;
-    color: var(--principal) !important;
-}
-
-.card-text {
-    font-size: 1.2em !important;
-    color: var(--principal) !important;
-}
-
-.list-group-item {
-    font-size: 1.2em;
-}
+}      
 
 /*  MEDIA QUERIES  */
 
 @media screen and (max-width: 992px) {
 
-    .tarjeta-servicios{
-        padding-left: 50px !important;
-    }   
-}
+    .row-service {
+        column-gap: 15px;
+    }
 
 @media screen and (max-width: 768px) {
 
-    .tarjeta-servicios {
-        padding-left: 160px !important;
+    .row-service {
+        flex-direction: column;
+        column-gap: 15px;
+        align-items: stretch;
+    }
+
+    .img-servicios {
+        margin-top: 20px !important;
+    }
+
+    .accordion {
+        margin-top: 20px !important;
     }
 }
 
 @media screen and (max-width: 576px) {
 
-    .tarjeta-servicios {
-        padding-left: 90px !important;
+    .row-service {
+        flex-direction: column;
+        column-gap: 15px;
+        align-items: stretch;
     }
-}
+
+    .img-servicios {
+        margin-top: 20px !important;
+    }
+
+    .accordion {
+        margin-top: 20px !important;
+    }
+    
+}}

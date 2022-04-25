@@ -1,8 +1,9 @@
 /*  PAG CONTACTOS  */
 
-.article-contacto {
+.flex-contacto {
+    display: flex;
+    justify-content: center;
     margin-top: 5%;
-    margin-left: 25%;
 }
 
 .p-contact {
@@ -39,10 +40,11 @@ body {    /*editar body para normalizar pag c/ bootstrap*/
 @media screen and (max-width: 992px) {
 
     .input-contactos {
-        margin-bottom: 30px;
+       margin-bottom: 100px;
     }
 
     .mapa {
+        margin-top: 10%;
         width: 400px;
         height: 500px;
     }
@@ -50,27 +52,17 @@ body {    /*editar body para normalizar pag c/ bootstrap*/
 
 @media screen and (max-width: 768px) {
 
-    .row>* {
-        margin-left: 50px;
-        padding-right: calc(var(--bs-gutter-x) * 5) !important;
-        padding-left: calc(var(--bs-gutter-x) * 5) !important;
-    }
-
     .mapa {
-        width: 760px;
-        height: 500px;
-        margin-left: -95px;
+        margin-left: 0%;
+        margin-top: 0%;
+        width: 700px;
     }
 }
 
 @media screen and (max-width: 576px) {
 
-    .row>* {
-        margin-left: 50px;
-        padding-left: calc(var(--bs-gutter-x) * .0) !important;
-    }   
-
     .mapa {
-        margin-left: -105px;
+        margin-left: 15px !important;
+        width: 500px;
     }
 }

@@ -1,13 +1,12 @@
 /*  PAG. ESTUDIO  */
 
-
-.section-estudio {
+.row-studio {
     display: flex;
-    flex-direction: row;
+    column-gap: 15px;
 }
 
 .img-estudio {
-    padding: 30px;
+    margin-top: 90px;
     width: 100%;
     justify-content: center;
 }
@@ -24,19 +23,17 @@
 
 @media screen and (max-width: 992px) {
 
-    .container {
-        max-width: 992px;
-    }
-
     .img-estudio {
-        margin-top: 0%;
+        margin-top: 55%;
     }
 }
 
 @media screen and (max-width: 768px) {
 
-    .container {
-        max-width: 768px;
+    .row-studio {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 25px;
     }
 
     .img-estudio {
@@ -46,8 +43,36 @@
 
 @media screen and (max-width: 576px) {
 
-    .container {
-        max-width: 576px;
+    .row-studio {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .img-estudio {
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .row-studio {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .img-estudio {
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .row-studio {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 25px;
     }
 
     .img-estudio {

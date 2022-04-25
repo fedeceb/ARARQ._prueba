@@ -58,3 +58,113 @@ footer {
         justify-content: center;
     }
 }
+
+/*  MEDIA QUERIES  */
+
+@media screen and (max-width: 992px) {
+
+    footer {
+        font-size: 1.5em !important;
+        min-height: 0vh;
+     
+        .divPadre__footer {
+        flex-direction: column !important;
+        justify-content: center !important;
+        }
+
+        .footer__list--item {
+            @include listitem ($direction : column, $margint : 10px, $marginl : auto);
+        }
+
+        .footer__socials {
+            @include fsocials ($justify : center, $font : 0.8em , $marginl : 0);
+        }
+     
+        .footer__logo {
+            display: flex;
+            font-size: 2em;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+ 
+    footer {
+        font-size: 1.5em !important;
+        min-height: 0vh;
+       
+        .divPadre__footer {
+            flex-direction: column !important;
+            justify-content: center !important;
+        }
+         
+        .footer__list--item {
+            @include listitem ($direction : column, $margint : 10px, $marginl : auto);
+        }
+         
+        .footer__socials {
+            @include fsocials ($justify : center, $font : 0.8em , $marginl : 0);
+        }
+         
+        .footer__logo {
+            display: flex;
+            font-size: 2em;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+ 
+    footer {
+        font-size: 1.5em !important;
+        min-height: 0vh;
+         
+        .divPadre__footer {
+            flex-direction: column !important;
+            justify-content: center !important;
+        }
+         
+        .footer__list--item {
+            @include listitem ($direction : column, $margint : 10px, $marginl : auto);
+        }
+         
+        .footer__socials {
+            @include fsocials ($justify : center, $font : 0.8em , $marginl : 0);
+        }
+         
+        .footer__logo {
+            display: flex;
+            font-size: 2em;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    footer {
+        font-size: 1.5em !important;
+        min-height: 0vh;
+         
+        .divPadre__footer {
+            flex-direction: column !important;
+            justify-content: center !important;
+        }
+         
+        .footer__list--item {
+            @include listitem ($direction : column, $margint : 10px, $marginl : auto);
+        }
+         
+        .footer__socials {
+            @include fsocials ($justify : center, $font : 0.8em , $marginl : 0);
+        }
+         
+        .footer__logo {
+            display: flex;
+            font-size: 2em;
+            justify-content: center;
+        }
+    }
+}

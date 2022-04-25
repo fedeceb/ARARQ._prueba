@@ -2,7 +2,6 @@
 /*  PÁG HOME  */
 
 main {
-
     background-color: $principal;
 }
 
@@ -21,7 +20,6 @@ main section {
 .row-index {
     display: flex;
     column-gap: 15px;
-
 }
 
 .p-index {
@@ -31,8 +29,27 @@ main section {
     color: $third
 }
 
+.btn-vermas {
+    background-color: $third;
+    border: 2px;
+    width: 100px;
+    height: 40px;
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-bottom: 20px;
+ }
+
 .centrado-img {
    width: 1000px;
+}
+
+.row-card {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 50px !important;
+    margin-bottom: 50px;
 }
 
 .card {
@@ -42,7 +59,6 @@ main section {
 
 .tarjetas {
     margin-top: 50px !important;
-    /*padding: 0 50px 30px 30px;*/
     padding-left: 50px;
     padding-right: 20px;
     padding-bottom: 30px;
@@ -68,10 +84,6 @@ h5 {
     color: $third !important;
 }
 
-/*.row {
-    margin-top: 50px !important;
-}*/
-
 .img-indxstudio {
     width: 100%;
 }
@@ -80,68 +92,151 @@ h5 {
 
 @media screen and (max-width: 992px){
 
-   .container {
-      max-width: 992px;
-   }
-  
-   body {
-       display: grid;
-        grid-template-rows: auto 1fr auto;
-        min-width: 100vh;
-   }
-  
-   .centrado-img {
-       max-width: 992px;
-   }
-  
-   .p-index {
+    .w-100 {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .row-index {
+        display: flex;
+        column-gap: 15px;
+    }
+    
+    .p-index {
+       
+        @include pindex ($font : 1.6em, $txtalign : justify, $margint : 20px, $marginb : 20px);
+        padding: 5px 25px 10px 15px;
+        color: $third
+    }
 
-        @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px)
-   }
+    .row-card {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+
+    .col {
+        flex: none !important;
+    }
+
+    .tarjetas {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
    
-   .container {
-       max-width: 768px;
-      }
-   
-   body {
-       display: grid;
-       grid-template-rows: auto 1fr auto;
-       min-width: 100vh;
-   }
-   
-   .centrado-img {
-       max-width: 768px;
-   }
-   
+    .w-100 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .row-index {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
    .p-index {
-       
-        @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px)
-   }
+        @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px);
+        padding: 5px 25px 10px 15px;
+    }
+
+    .row-card {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+
+    .col {
+        flex: none !important;
+    }
+
+    .tarjetas {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 
 @media screen and (max-width: 576px) {
 
-   .container {
-      max-width: 576px;
-   }
-  
-   body {
-       display: grid;
-       grid-template-rows: auto 1fr auto;
-       min-width: 100vh;
-   }
-  
-   .centrado-img {
-       max-width: 576px;
-   }
-  
+    .w-100 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel {
+        margin-bottom: 20px;
+    }
+
+    .row-index {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
    .p-index {
-       
-        @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px)
-   }
-}  
+        @include pindex ($font : 1.5em, $txtalign : justify, $margint : 15px, $marginb : 20px);
+        padding: 0px 25px 0px 15px;
+    }
+
+    .row-card {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+
+    .col {
+        flex: none !important;
+    }
+
+    .tarjetas {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .w-100 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel {
+        margin-bottom: 20px;
+    }
+
+    .row-index {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+   .p-index {
+        @include pindex ($font : 1.5em, $txtalign : justify, $margint : 15px, $marginb : 20px);
+        padding: 0px 25px 0px 15px;
+    }
+
+    .row-card {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+
+    .col {
+        flex: none !important;
+    }
+
+    .tarjetas {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
