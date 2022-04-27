@@ -134,25 +134,49 @@ header {
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
 
-header {
-    .navbar {
-        min-height: 12vh;
-        justify-content: space-between;
-        align-items: center;
+    ul {
+        padding-left: 0rem !important;
     }
 
-    .navbarBrand {
-        color: $third !important;
-        flex-basis: 30%;
-        font-size: 3.5em;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
+    .container {
+        padding: 0px 7.5px !important;
+        margin: 0px 0px 0px 0px !important;
+     }
+
+     .position-abs {
+        margin-left: 0px !important;
     }
 
-    .menu {
-        flex-basis: 40%;
-        justify-content: space-between;
-    }
+    header {
+        height: 200px !important;
 
-}}
+        .navbar {
+            min-height: 12vh;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbarBrand {
+            color: $third !important;
+            flex-basis: 30%;
+            font-size: 3.5em;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .menu {
+            flex-basis: 40%;
+            justify-content: space-between;
+        }
+
+        .flex-row {
+        flex-wrap: wrap !important;
+        }
+
+        .menu__link {
+            font-size: 1.4em !important;
+            padding: 1.4rem !important;
+        }
+    }
+}
