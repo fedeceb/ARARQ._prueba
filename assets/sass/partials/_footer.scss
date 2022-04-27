@@ -8,7 +8,8 @@ footer {
 
     .divPadre__footer {
         display: flex;
-        padding: 0 2rem;
+        flex-direction: row;}
+        flex-wrap: nowrap;
         justify-content: space-between;
 
         .logo__socials {
@@ -22,41 +23,41 @@ footer {
         }
 
         .footer__socials {
-            display: flex;
-            flex-direction: row;
-            font-size: 0.8em;
-            margin-left: 5%;
+            @include fsocials ($fdirect : row, $justify : center, $font : 0.9em , $colgap : 20px);
+
+            /*.footer_socials--list {
+                display: inline-block;
+                position: absolute;
+                flex-direction: row;
+                padding: 1rem;
+            }*/
         }
 
-        .footer_socials--list {
-            display: inline-block;
-            position: absolute;
-            flex-direction: row;
-            padding: 1rem;
-        }
-          
         .footer__list {
             margin-top: 20px;
             display: flex;
-            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: center;
 
-            .footer__list h3 {
+            .h3-footer {
                 font-size: 1.6em;
                 margin-bottom: 10px;
             }
 
             .footer__list--item {
-                display: flex;
-                flex-direction: column;
-                margin-top: 10px;
-                margin-left: 500px;    
+                @include listitem ($direction : column, $margint : 10px, $alitems : flex-end);
+                /*display: flex;*/
+                /*flex-direction: column;
+                align-items: flex-end; 
+                margin-top: 10px;*/
+                  
             }
-        }    
-    }
-    .divDerechos {
-        display: flex;
-        justify-content: center;
-    }
+        }
+
+        .divDerechos {
+            display: flex;
+            justify-content: center;
+        }
 }
 
 /*  MEDIA QUERIES  */
@@ -64,20 +65,24 @@ footer {
 @media screen and (max-width: 992px) {
 
     footer {
-        font-size: 1.5em !important;
         min-height: 0vh;
      
         .divPadre__footer {
-        flex-direction: column !important;
-        justify-content: center !important;
+        flex-direction: column;
+        justify-content: center;
+        }
+
+        .footer__list {
+            justify-content: center;
+            align-items: center;
         }
 
         .footer__list--item {
-            @include listitem ($direction : column, $margint : 10px, $marginl : auto);
+            @include listitem ($direction : column, $margint : 10px, $alitems : center !important);
         }
 
         .footer__socials {
-            @include fsocials ($justify : center, $font : 0.8em , $marginl : 0);
+            @include fsocials ($fdirect : row, $justify : center, $font : 0.9em , $colgap : 20px);
         }
      
         .footer__logo {
@@ -89,82 +94,38 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
- 
+
     footer {
-        font-size: 1.5em !important;
         min-height: 0vh;
-       
-        .divPadre__footer {
-            flex-direction: column !important;
-            justify-content: center !important;
-        }
-         
-        .footer__list--item {
-            @include listitem ($direction : column, $margint : 10px, $marginl : auto);
-        }
-         
-        .footer__socials {
-            @include fsocials ($justify : center, $font : 0.8em , $marginl : 0);
-        }
-         
-        .footer__logo {
-            display: flex;
-            font-size: 2em;
-            justify-content: center;
-        }
     }
 }
 
 @media screen and (max-width: 576px) {
- 
+
     footer {
-        font-size: 1.5em !important;
-        min-height: 0vh;
-         
-        .divPadre__footer {
-            flex-direction: column !important;
-            justify-content: center !important;
-        }
-         
-        .footer__list--item {
-            @include listitem ($direction : column, $margint : 10px, $marginl : auto);
-        }
-         
-        .footer__socials {
-            @include fsocials ($justify : center, $font : 0.8em , $marginl : 0);
-        }
-         
-        .footer__logo {
-            display: flex;
-            font-size: 2em;
-            justify-content: center;
-        }
+        min-height: 0vh; 
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
-
+    
     footer {
-        font-size: 1.5em !important;
         min-height: 0vh;
-         
-        .divPadre__footer {
-            flex-direction: column !important;
-            justify-content: center !important;
+
+        .logo__socials {
+            font-size: 1.5em;
         }
-         
-        .footer__list--item {
-            @include listitem ($direction : column, $margint : 10px, $marginl : auto);
+
+        .h3-footer {
+            font-size: 1em;
         }
-         
-        .footer__socials {
-            @include fsocials ($justify : center, $font : 0.8em , $marginl : 0);
+
+        .li-footer {
+            font-size: 12px;
         }
-         
-        .footer__logo {
-            display: flex;
-            font-size: 2em;
-            justify-content: center;
+
+        .p-derechos {
+            font-size: 10px;
         }
     }
 }
