@@ -1,6 +1,6 @@
 /*  PAG - PROYECTOS  */
 
-.row-obras {
+.row-obras { /*aplicar mixin*/
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
@@ -65,17 +65,13 @@ padding: 30px;
     margin-left: auto;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
 
     .row-obras {
-        flex-wrap: wrap;
         align-content: center;
         justify-content: space-evenly;
         align-items: flex-end;
         column-gap: 30px;
-        row-gap: 30px;
-        padding-top: 30px;
-
     }
 
     .img-galeria {
@@ -99,21 +95,6 @@ padding: 30px;
     }
 
     .container__text--div {
-        @include pindex ($font : 1.6em, $txtalign : center, $margint : 30px, $marginb : 20px)
+        @include pindex ($txtalign : center, $margint : 30px)
     }
-}
-
-@media screen and (max-width: 576px) {
-
-    .row-obras {
-
-    }
-}
-
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    width: 100%; 
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
-    margin-right: auto;
-    margin-left: auto;
 }

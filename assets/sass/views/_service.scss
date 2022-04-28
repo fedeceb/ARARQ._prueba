@@ -13,14 +13,30 @@
 
 h2 {
     font-size: 30px !important;
+    color: $third;
+}
+
+.accordion-item {
+    background-color: $principal !important;
+    border: none !important;
+}
+
+
+.accordion-body {
+    font-size: 12px !important;
+    color: $third;
 }
 
 .accordion-button {
     font-size: 16px !important;
-}
+    background-color: $principal !important;
+    color: $third !important;
 
-.accordion-body {
-    font-size: 12px !important;
+    .accordion-button:not(.collapsed) {
+        color: none;
+        background-color: none;
+        box-shadow: none;
+    }
 }
 
 .row-service {
@@ -38,13 +54,16 @@ h2 {
 
 .p-carousel {
     font-size: 14px;
+    color: $third;
 }
 
 .p-int {
     color: $third !important;
     font-size: 16px;
     text-align: justify;
-}      
+}
+
+
 
 /*  MEDIA QUERIES  */
 
@@ -53,13 +72,14 @@ h2 {
     .row-service {
         column-gap: 15px;
     }
+}
 
 @media screen and (max-width: 768px) {
 
     .row-service {
         flex-direction: column;
-        column-gap: 15px;
         align-items: stretch;
+        margin-bottom: 0px;
     }
 
     .img-servicios {
@@ -71,20 +91,9 @@ h2 {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
 
-    .row-service {
-        flex-direction: column;
-        column-gap: 15px;
-        align-items: stretch;
+    .p-int {
+        font-size: 14px
     }
-
-    .img-servicios {
-        margin-top: 20px !important;
-    }
-
-    .accordion {
-        margin-top: 20px !important;
-    }
-    
-}}
+}

@@ -23,13 +23,12 @@ main section {
 }
 
 .p-index {
-   
     @include pindex ($font : 1.6em, $txtalign : justify, $margint : 40px, $marginb : 20px);
     padding: 50px 25px 10px 10px;
     color: $third
 }
 
-.btn-vermas {
+.btn-vermas {   /*aplicar extend*/
     background-color: $third;
     border: 2px;
     width: 100px;
@@ -69,7 +68,7 @@ h5 {
     font-size: 1.6em !important;
 }
 
-.btn-servicios {
+.btn-servicios {    /*aplicar extend*/
     background-color: $principal;
     color: $third;
     border: 2px;
@@ -91,32 +90,28 @@ h5 {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1200px) {
+
+    .w-100 {
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 992px){
 
     .row-cols-md-4>* {
         flex: 0 0 auto;
         width: 47% !important;
     }
-
-    .w-100 {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .row-index {
-        display: flex;
-        column-gap: 15px;
-    }
     
     .p-index {
        
-        @include pindex ($font : 1.6em, $txtalign : justify, $margint : 20px, $marginb : 20px);
+        @include pindex ($margint : 20px, $marginb : 20px);
         padding: 5px 25px 10px 15px;
         color: $third
     }
 
     .row-card {
-        display: flex;
         flex-direction: row !important;
         flex-wrap: wrap;
         row-gap: 30px;
@@ -141,45 +136,16 @@ h5 {
 @media screen and (max-width: 768px) {
 
     .row-cols-md-4>* {
-        flex: 0 0 auto;
         width: 45% !important;
-    }
-   
-    .w-100 {
-        width: 100%;
-        height: 100%;
     }
 
     .row-index {
-        display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
 
    .p-index {
-        @include pindex ($font : 1.6em, $txtalign : justify, $margint : 15px, $marginb : 20px);
-        padding: 5px 25px 10px 15px;
-    }
-
-    .row-card {
-        display: flex;
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        row-gap: 30px;
-        column-gap: 50px;
-    }
-
-    .col {
-        flex: none !important;
-    }
-
-    .tarjetas {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .btn-servicios {
-        font-size: 1.2em;
+        @include pindex ($margint : 15px);
     }
 }
 
@@ -187,91 +153,32 @@ h5 {
 @media screen and (max-width: 576px) {
 
     .row-cols-md-4>* {
-        flex: 0 0 auto;
         width: 46% !important;
-    }
-
-    .w-100 {
-        width: 100%;
-        height: 100%;
     }
 
     .carousel {
         margin-bottom: 20px;
     }
 
-    .row-index {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-    }
-
    .p-index {
-        @include pindex ($font : 1.5em, $txtalign : justify, $margint : 15px, $marginb : 20px);
+        @include pindex ($margint : 15px);
         padding: 0px 25px 0px 15px;
     }
 
     .row-card {
-        display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        row-gap: 30px;
         column-gap: 30px;
-        justify-content: center;
-    }
-
-    .col {
-        flex: none !important;
-    }
-
-    .tarjetas {
-        padding-left: 0px;
-        padding-right: 0px;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
 
     .row-cols-md-4>* {
-        flex: 0 0 auto;
         width: 100% !important;
     }
 
-    .w-100 {
-        width: 100%;
-        height: 100%;
-    }
-
-    .carousel {
-        margin-bottom: 20px;
-    }
-
-    .row-index {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-    }
-
    .p-index {
-        @include pindex ($font : 1.5em, $txtalign : justify, $margint : 15px, $marginb : 20px);
-        padding: 0px 25px 0px 15px;
-    }
-
-    .row-card {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        row-gap: 30px;
-        column-gap: 30px;
-    }
-
-    .col {
-        flex: none !important;
-    }
-
-    .tarjetas {
-        padding-left: 0px;
-        padding-right: 0px;
+        @include pindex ($font : 1.5em)
     }
 
     .card-img-top {

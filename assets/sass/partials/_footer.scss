@@ -34,7 +34,7 @@ footer {
         }
 
         .footer__list {
-            margin-top: 20px;
+            margin-top: 35px;
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -62,17 +62,18 @@ footer {
 
 /*  MEDIA QUERIES  */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
 
     footer {
         min-height: 0vh;
      
         .divPadre__footer {
-        flex-direction: column;
-        justify-content: center;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .footer__list {
+            margin-top: 10px;
             justify-content: center;
             align-items: center;
         }
@@ -93,24 +94,9 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
-
-    footer {
-        min-height: 0vh;
-    }
-}
-
-@media screen and (max-width: 576px) {
-
-    footer {
-        min-height: 0vh; 
-    }
-}
-
 @media screen and (min-width: 320px) and (max-width: 375px) {
     
     footer {
-        min-height: 0vh;
 
         .logo__socials {
             font-size: 1.5em;
